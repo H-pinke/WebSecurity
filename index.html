@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>web xss攻击 sql注入攻击 </title> 
+</head>
+<body>
+
+<h1>xss攻击</h1>
+<!-- 攻击例子  <script>alert(1)</script> -->
+
+<form action="demo-xss.php" >
+    <input type="text" name="user">
+    <input type="submit">
+</form>
+
+
+<h1>sql注入攻击</h1>
+<!-- 攻击例子  用户名 Maxsu  密码： 1' or '1'='1-->
+
+<form action="demo-sql.php" >
+    user: <input type="text" name="user">
+    password: <input type="text" name="password">
+    <input type="submit">
+</form>
+
+</body>
+</html>
